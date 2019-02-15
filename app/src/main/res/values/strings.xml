@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TestHttpURLConnectionPOST</string>
+    <string name="port">port: </string>
+    <string name="amout">amout: </string>
+    <string name="hint">any words</string>
+    <string name="post">post data</string>
+    <string name="browser">browser</string>
+</resources>
