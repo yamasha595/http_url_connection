@@ -5,4 +5,5 @@
     <string name="hint">any words</string>
     <string name="post">post data</string>
     <string name="browser">browser</string>
+    <string name="server">socket server mode</string>
 </resources>

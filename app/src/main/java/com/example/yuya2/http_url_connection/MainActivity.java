@@ -97,6 +97,15 @@ public class MainActivity extends Activity {
             }
         });
 
+        //button to change socket mode
+        findViewById(R.id.socket_server_mode_button).setOnClickListener((View v)->{
+            Intent intent = new Intent(getApplicationContext(),SocketServerActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish();
+        });
+
+
         textView = findViewById(R.id.text_view);
         View decor = this.getWindow().getDecorView();
         decor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
@@ -106,7 +115,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onDestroy() {
-        task.setListener(null);
+        if(task != null) task.setListener(null);
         super.onDestroy();
     }
 

@@ -84,6 +84,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.414" />
 
+    <Button
+        android:id="@+id/socket_server_mode_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/server"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post"
+        app:layout_constraintVertical_bias="0.414" />
+
     <TextView
         android:id="@+id/text_view"
         android:layout_width="wrap_content"
